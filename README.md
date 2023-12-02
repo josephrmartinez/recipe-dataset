@@ -1,4 +1,4 @@
-# Recipe Dataset
+# Free, simple, open recipe dataset
 Simple recipe datasets with title of dish, ingredients, and instructions.
 
 ### 13k-recipes.csv
@@ -24,9 +24,9 @@ The original dataset was uploaded to Kaggle as [Food Ingredients and Recipes Dat
 The orignal dataset was over 200 mb and contained 13,500 recipes and images. I dropped the images and created the simplified resources in this repo. No changes have been made to the text content.
 
 Each database contains a "recipes" table with the following three columns:
-Title: Title of the dish.
-Ingredients: Ingredients as they were scraped from the website.
-Instructions: Instructions to recreate the dish.
+- Title: Title of the dish.
+- Ingredients: Ingredients as they were scraped from the website.
+- Instructions: Instructions to recreate the dish.
 
 Database schema:
 ```
