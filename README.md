@@ -10,12 +10,11 @@ Simple recipe datasets with title of dish, ingredients, and instructions.
 - 26 mb
 
 ### 5k-recipes.db
-- Database file with 5,000 recipes
-- This database contains the first 5,000 rows from 13k-recipes.db
+- Database file with 5,000 recipes (the first 5,000 rows from 13k-recipes.db)
 - 9.9 mb
 
 ## Source
-The original dataset was uploaded to Kaggle as [Food Ingredients and Recipes Dataset with Images](https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images). The original dataset was created by scraping from the Epicurious Website.
+The original dataset was created by scraping from the Epicurious Website and uploaded to Kaggle as [Food Ingredients and Recipes Dataset with Images](https://www.kaggle.com/datasets/pes12017000148/food-ingredients-and-recipe-dataset-with-images). 
 
 ## License:
 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)
