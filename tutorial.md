@@ -1,5 +1,5 @@
 # Implement Semantic Search using Datasette
-## Spinning up 'vibe-search' on a SQLite Database
+### Spinning up 'vibe-search' on a SQLite Database
 
 [Datasette](https://datasette.io/) is an open-source tool for exploring and publishing data. It allows you to create web interfaces for exploring databases with minimal effort. Developed by Simon Willison, a co-creator of the Django web framework, Datasette is similarly designed to be simple, lightweight, and easy to use. One of the things it greatly simplifies is the ability to quickly spin up "semantic search" against a SQLite database. 
 
