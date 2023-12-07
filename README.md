@@ -1,6 +1,9 @@
 # Free, simple, open recipe dataset
 Simple recipe datasets with title of dish, ingredients, and instructions.
 
+### Tutorial
+Follow the [tutorial](tutorial.md) to implement semantic search on this dataset using Datasette
+
 ### 13k-recipes.csv
 - CSV file with 13,000 recipes
 - 26.6 mb
