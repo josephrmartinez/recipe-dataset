@@ -348,4 +348,4 @@ In traditional SQL databases, you typically don't have this level of integration
 
 **Implement RAG.** This tutorial covered the first parts of what is known as [Retrieval Augmented Generation](https://github.com/openai/openai-cookbook/blob/main/examples/Question_answering_using_embeddings.ipynb). We ended at the stage where the most relevant documents are returned. Now complete the implementation of RAG by enabling full question answering. 
 
-**Improve this tutorial** Fork the repository and improve this tutorial. Or, write your own tutorial to help others get up and running with Datasette!
+**Improve this tutorial** [Fork the repository](https://github.com/josephrmartinez/recipe-dataset) and improve this tutorial. Or, write your own tutorial to help others get up and running with Datasette!
