@@ -309,7 +309,9 @@ Since this function is going to live in our metadata.json file, it will need to 
 "sql": "SELECT ROUND(CAST(json_extract(value, '$[1]') AS REAL), 3) AS score, r.Title, r.Ingredients, r.Instructions FROM json_each(faiss_search_with_scores('5k-recipes', 'recipe_embeddings', (SELECT openai_embedding(:query, :openai_api_key)), 10)) AS json_data JOIN recipes AS r ON r.id = CAST(json_extract(json_data.value, '$[0]') AS INTEGER) WHERE length(coalesce(:query, ''))>0;"
 ```
 
-Make the update to the custom query and save your metadata file. For reference, your metadata.json file should now look like the demo [metadata.json](metadata.json) file in this repo. Close the terminal running your Datasette server, then restart it with the following command to apply the updated metadata and relaunch the server:
+Make the update to the custom query and save your metadata file. For reference, your metadata.json file should now look like the demo [metadata.json](metadata.json) file in this repo.
+
+Close the terminal running your Datasette server, then restart it with the following command to apply the updated metadata and relaunch the server:
 
 ```
 datasette 5k-recipes.db --metadata metadata.json
