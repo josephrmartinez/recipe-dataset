@@ -1,0 +1,25 @@
+{
+    "title": "Recipe Search",
+    "description": "Full text and semantic search on 5,000 recipes.",
+    "databases": {
+      "5k-recipes": {
+        "source": "Recipe Dataset from Epicurious",
+        "source_url": "https://github.com/josephrmartinez/recipe-dataset",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "queries": {
+            "semantic-search": {
+              "hide_sql": false,
+              "sql": "SELECT ROUND(CAST(json_extract(value, '$[1]') AS REAL), 3) AS score, r.Title, r.Ingredients, r.Instructions FROM json_each(faiss_search_with_scores('5k-recipes', 'recipe_embeddings', (SELECT openai_embedding(:query, :openai_api_key)), 10)) AS json_data JOIN recipes AS r ON r.id = CAST(json_extract(json_data.value, '$[0]') AS INTEGER) WHERE length(coalesce(:query, ''))>0;"
+            }
+          }
+        }
+    },
+    "plugins": {
+        "datasette-faiss": {
+            "tables": [
+                ["5k-recipes", "recipe_embeddings"]
+            ]
+        }
+    }
+  }
